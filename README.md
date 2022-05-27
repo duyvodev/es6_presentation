@@ -62,11 +62,11 @@
                 name: "Duy",
                 age: 22,
                 talk: () => {
+                    window.name = "window"
+                    window.age = 9999
                     console.log(this.name + " " + this.age);
                 }
             }
-            var name = "window"
-            var age = 9999
 
             obj.talk() // window 9999
         ```
