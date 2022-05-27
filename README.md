@@ -6,7 +6,6 @@
   1. Short syntax
   2. You don't need the `function` keyword, the `return` keyword, and the curly brackets `{}`.
   ***Example:***
-    <br />
         ```javascript
             // ES5
             var x = function(x, y) {
@@ -19,7 +18,6 @@
 - #### Disadvantages :-1:
   1. Using `const` is safer than using `var`, because a function expression is always a constant value
    ***Example:***
-    <br />
         ```javascript
             let log2 = (msg) => {
                 console.log(msg)
@@ -34,7 +32,6 @@
     2. Arrow functions do not have their own `this`. They are not well suited for defining object methods.
 
         ***Example:***
-    <br />
         ```javascript
             // Regular function
             let obj = {
@@ -89,7 +86,6 @@
         ```
   3. Arrow functions are not hoisted. They must be defined **before** they are used.
     ***Example:***
-    <br />
         ```javascript
             // Regular function with hoisting
             log3("hello") //hello
@@ -103,33 +99,29 @@
                 console.log(msg)
             }  
         ```
-  - Arrow functions don't have `arguments` obj
+  4. Arrow functions don't have `arguments` obj
     ***Example:***
-    <br />
-    ```javascript
-        function log4(){
-            console.log(arguments)
-        }
+        ```javascript
+            function log4(){
+                console.log(arguments)
+            }
 
-        log4(1,2,3,4,5) //Arguments(5) [1, 2, 3, 4, 5, callee: ƒ, Symbol(Symbol.iterator): ƒ]
+            log4(1,2,3,4,5) //Arguments(5) [1, 2, 3, 4, 5, callee: ƒ, Symbol(Symbol.iterator): ƒ]
 
-        const log5 = () => {
-            console.log(arguments)
-        }
+            const log5 = () => {
+                console.log(arguments)
+            }
 
-        log5(1,2,3,4,5) // Uncaught ReferenceError: arguments is not defined
-    ```
-    <br />
-    <br />
+            log5(1,2,3,4,5) // Uncaught ReferenceError: arguments is not defined
+        ```
 ## *For/of loop* ➿
 ---
 - #### Definition :astonished:
-    The JavaScript `for/of` statement loops through the values of an iterable objects.
-    `for/of` lets you loop over data structures that are iterable such as Arrays, Strings, Maps, NodeLists, and more...
+    *The JavaScript* `for/of` *statement loops through the values of an iterable objects.*
+    `for/of` *lets you loop over data structures that are iterable such as Arrays, Strings, Maps, NodeLists, and more...*
 - #### Advantages :+1:
     1. Short syntax
     ***Example:***
-    <br />
         ```javascript
             //Regular for loop
             for (let i = 0; i <= arr.length; i++) {
@@ -144,7 +136,6 @@
 - #### Disadvantages :-1:
     1. `for/of` loops take more time than `regular for` loops
     ***Example:***
-    <br />
         ```javascript
             var arr = [];
             for (let i = 0; i <= 10000; i++) {
